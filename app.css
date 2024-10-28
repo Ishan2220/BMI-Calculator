@@ -1,0 +1,109 @@
+.App {
+  text-align: center;
+  padding: 20px;
+  animation: colorTransition 5s ease-in-out infinite alternate;
+}
+
+.title {
+  font-size: 2rem;
+  color: #4a90e2;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.input-container {
+  margin-top: 20px;
+}
+
+label {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: box-shadow 0.3s ease;
+}
+
+input:focus {
+  box-shadow: 0 0 8px #4a90e2;
+  border-color: #4a90e2;
+}
+
+.calculate-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #4a90e2;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.calculate-button:hover {
+  background-color: #357abd;
+  transform: scale(1.05);
+}
+
+.result {
+  margin-top: 20px;
+  animation: slideIn 0.8s ease-out;
+}
+
+.bmi-value, .ideal-weight {
+  font-size: 1.2rem;
+  color: #4a90e2;
+  font-weight: bold;
+}
+
+/* Styles for the BMI Table */
+.bmi-table-container {
+  margin-top: 30px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #ffffff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.table-title {
+  background-color: #4a90e2;
+  color: white;
+  padding: 10px;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.bmi-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.bmi-table th, .bmi-table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.bmi-table th {
+  background-color: #f4f4f4;
+}
+
+.bmi-table tr:hover {
+  background-color: #e0f7ff;
+}
+
+/* Additional Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
